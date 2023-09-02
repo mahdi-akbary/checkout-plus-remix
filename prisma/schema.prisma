@@ -1,0 +1,68 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://root:123@localhost:5432/checkout"
+}
+
+model Session {
+  id          String    @id
+  shop        String
+  state       String
+  isOnline    Boolean   @default(false)
+  scope       String?
+  expires     DateTime?
+  accessToken String
+  userId      BigInt?
+}
+
+model CartItems {
+  id            String    @id
+  shop          String
+  productId     String
+  variantId     String
+  variantTitle  String
+  productTitle  String
+  handle        String
+  price         Float
+  priceCurrency String
+  imageAlt      String
+  createdAt     DateTime?
+}
+
+model GiftProducts {
+  id                String @id
+  shop              String
+  variantId         String
+  title             String
+  displayName       String
+  price             Float
+  inventoryQuantity Int
+  imageUrl          String
+}
+
+model giftDiscounts {
+  id         String @id
+  shop       String
+  amount     Float
+  discountId String
+}
+
+model feedbacks {
+  id         String @id
+  shop       String
+  option     Int
+  optionName String
+}
+
+model surveys {
+  id         String @id
+  shop       String
+  option     Int
+  optionName String
+}
