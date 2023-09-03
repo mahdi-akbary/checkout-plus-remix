@@ -22,7 +22,7 @@ model Session {
 }
 
 model CartItems {
-  id            String    @id
+  id            Int    @id @default(autoincrement())
   shop          String
   productId     String
   variantId     String
@@ -32,11 +32,11 @@ model CartItems {
   price         Float
   priceCurrency String
   imageAlt      String
-  createdAt     DateTime?
+  createdAt     DateTime @default(now())
 }
 
 model GiftProducts {
-  id                String @id
+  id                Int @id @default(autoincrement())
   shop              String
   variantId         String
   title             String
@@ -47,21 +47,21 @@ model GiftProducts {
 }
 
 model giftDiscounts {
-  id         String @id
+  id         Int @id @default(autoincrement())
   shop       String
   amount     Float
   discountId String
 }
 
 model feedbacks {
-  id         String @id
+  id         Int @id @default(autoincrement())
   shop       String
   option     Int
   optionName String
 }
 
 model surveys {
-  id         String @id
+  id         Int @id @default(autoincrement())
   shop       String
   option     Int
   optionName String

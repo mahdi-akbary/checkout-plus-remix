@@ -2,7 +2,7 @@
 
 name = "checkout-plus"
 client_id = "731d3f057b3dcdc6ec4edf58149401de"
-application_url = "https://070a-111-125-155-51.ngrok-free.app"
+application_url = "https://xbox-turn-fonts-lip.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ use_legacy_install_flow = true
 
 [auth]
 redirect_urls = [
-  "https://070a-111-125-155-51.ngrok-free.app/auth/callback",
-  "https://070a-111-125-155-51.ngrok-free.app/auth/shopify/callback",
-  "https://070a-111-125-155-51.ngrok-free.app/api/auth/callback"
+  "https://xbox-turn-fonts-lip.trycloudflare.com/auth/callback",
+  "https://xbox-turn-fonts-lip.trycloudflare.com/auth/shopify/callback",
+  "https://xbox-turn-fonts-lip.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
