@@ -2,7 +2,7 @@
 
 name = "checkout-plus"
 client_id = "731d3f057b3dcdc6ec4edf58149401de"
-application_url = "https://xbox-turn-fonts-lip.trycloudflare.com"
+application_url = "https://convicted-premium-msgid-innovation.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ use_legacy_install_flow = true
 
 [auth]
 redirect_urls = [
-  "https://xbox-turn-fonts-lip.trycloudflare.com/auth/callback",
-  "https://xbox-turn-fonts-lip.trycloudflare.com/auth/shopify/callback",
-  "https://xbox-turn-fonts-lip.trycloudflare.com/api/auth/callback"
+  "https://convicted-premium-msgid-innovation.trycloudflare.com/auth/callback",
+  "https://convicted-premium-msgid-innovation.trycloudflare.com/auth/shopify/callback",
+  "https://convicted-premium-msgid-innovation.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

@@ -12,7 +12,7 @@ import {
 export default function Dashboard() {
   return (
     <Page>
-      <ui-title-bar title="Dashboard" />
+      <ui-title-bar title="How to use" />
       <Layout>
         <Layout.Section>
           <Card>
